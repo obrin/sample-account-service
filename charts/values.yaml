@@ -7,7 +7,7 @@ mainDeployment:
         repository: jordanyong/sample-account-service
       ports:
         - name: http
-          containerPort: 4003
+          containerPort: 4001
       resources:
         limits:
           cpu: 50m
@@ -19,7 +19,7 @@ mainDeployment:
 service:
   ports:
     - port: 80
-      targetPort: 4003
+      targetPort: 4001
       protocol: TCP
       name: http
 
